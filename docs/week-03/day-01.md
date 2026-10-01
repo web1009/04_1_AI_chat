@@ -1016,7 +1016,7 @@ int score = result.getScore(); // 😃 안전하게 바로 사용!
 AI가 응답할 JSON 키값을 `@JsonProperty`로 정확히 매핑해줍니다.
 
 ```java
-package com.sparta.msa.lesson.dto;
+package com.aichat.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AccessLevel;
@@ -1215,7 +1215,7 @@ public enum DomainExceptionCode {
 ```
 
 ```java
-import com.sparta.msa.lesson.domain.ai.dto.response.ChatResponse;
+import com.aichat.domain.ai.dto.response.ChatResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;

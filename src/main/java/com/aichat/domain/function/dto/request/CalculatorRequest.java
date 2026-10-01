@@ -1,0 +1,17 @@
+package com.aichat.domain.function.dto.request;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
+
+@Getter
+@NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class CalculatorRequest {
+
+  double a;
+  double b;
+  String operation;
+
+}

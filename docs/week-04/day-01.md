@@ -220,7 +220,7 @@ pgvector는 PostgreSQL에서 **벡터 유사도 검색**을 가능하게 해주�
 터미널(또는 CMD)에서 아래 명령어를 실행하세요. 이 명령어는 pgvector가 사전 설치된 PostgreSQL 16 버전을 실행합니다.
 
 ```bash
-docker run -d --name local-postgres --restart always -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=sparta -p 5432:5432 pgvector/pgvector:pg16
+docker run -d --name local-postgres --restart always -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=aichat -p 5432:5432 pgvector/pgvector:pg16
 ```
 
 - `d`: 백그라운드에서 실행 (컨테이너가 꺼지지 않음)
