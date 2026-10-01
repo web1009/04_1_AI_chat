@@ -161,7 +161,7 @@ public class ChatConversation {
 ```
 
 ```java
-import com.sparta.msa.lesson.domain.ai.entity.ChatConversation;
+import com.aichat.domain.ai.entity.ChatConversation;
 
 import java.util.UUID;
 
@@ -269,7 +269,7 @@ public class ChatMessage {
 ```
 
 ```java
-import com.sparta.msa.lesson.domain.ai.entity.ChatMessage;
+import com.aichat.domain.ai.entity.ChatMessage;
 
 import java.util.List;
 import java.util.UUID;
@@ -650,9 +650,9 @@ private ChatMessage saveSummaryMessage(ChatConversation conversation, String sum
     - **비교 분석**: 두 개의 `Media` 객체를 리스트에 담아 한 번에 전송하여 모델이 두 이미지를 대조하게 합니다.
 
 ```java
-import com.sparta.msa.lesson.domain.ai.dto.response.ImageAnalysisResponse;
-import com.sparta.msa.lesson.global.exception.DomainException;
-import com.sparta.msa.lesson.global.exception.DomainExceptionCode;
+import com.aichat.domain.ai.dto.response.ImageAnalysisResponse;
+import com.aichat.global.exception.DomainException;
+import com.aichat.global.exception.DomainExceptionCode;
 
 import java.io.IOException;
 
