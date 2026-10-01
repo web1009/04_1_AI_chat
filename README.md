@@ -89,13 +89,13 @@ git checkout week-03/day-01
 ## 📁 프로젝트 구조
 
 ```
-sparta-msa-lesson-part-02
+04_1_AI_chat
 ├── build.gradle
 ├── settings.gradle
 ├── gradle/wrapper
 └── src
     ├── main
-    │   ├── java/com/sparta/msa/lesson
+    │   ├── java/com/aichat
     │   │   ├── domain
     │   │   │   ├── category        # 카테고리 엔티티 · 리포지토리
     │   │   │   ├── order           # 주문 · 주문상품 (엔티티, 매퍼, 서비스)
@@ -113,7 +113,7 @@ sparta-msa-lesson-part-02
     │       │   ├── V2__create_users_table.sql
     │       │   └── V3__create_product_table.sql
     │       └── application.yml
-    └── test/java/com/sparta/msa/lesson
+    └── test/java/com/aichat
         └── LessonApplicationTests.java
 ```
 
@@ -124,28 +124,28 @@ sparta-msa-lesson-part-02
 ### 1. 사전 준비
 
 - **JDK 21**
-- **PostgreSQL** — `localhost:5432`에 `sparta` 데이터베이스 생성
+- **PostgreSQL** — `localhost:5432`에 `aichat` 데이터베이스 생성
 
 | 항목       | 값                                         |
 |----------|-------------------------------------------|
-| URL      | `jdbc:postgresql://localhost:5432/sparta` |
+| URL      | `jdbc:postgresql://localhost:5432/aichat` |
 | Username | `postgres`                                |
 | Password | `postgres`                                |
 
 ```bash
 # Docker로 PostgreSQL 실행 (선택)
-docker run -d --name sparta-postgres \
+docker run -d --name aichat-postgres \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=sparta \
+  -e POSTGRES_DB=aichat \
   -p 5432:5432 postgres
 ```
 
 ### 2. 클론 및 빌드
 
 ```bash
-git clone https://github.com/KDT-Java-5/sparta-msa-lesson-part-02.git
-cd sparta-msa-lesson-part-02
+git clone https://github.com/web1009/04_1_AI_chat.git
+cd 04_1_AI_chat
 git checkout main
 
 ./gradlew build

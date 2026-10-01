@@ -272,7 +272,7 @@ AI는 문장을 글자 단위가 아닌 **토큰**이라는 덩어리로 쪼개�
 Spring AI 환경에서 `JTokkit` 라이브러리를 사용해 전송 전 토큰 수를 미리 예측해볼 수 있습니다.
 
 ```java
-package com.sparta.msa.lesson.global.utils;
+package com.aichat.global.utils;
 
 import java.util.List;
 
